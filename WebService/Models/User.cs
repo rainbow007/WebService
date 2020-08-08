@@ -11,15 +11,15 @@ namespace WebService.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        [Required]
+       //  [Required]
         public string Email { get; set; }
-        [Required]
-        [StringLength(20, MinimumLength = 3)]
+       //  [Required]
+       //  [StringLength(20, MinimumLength = 3)]
         public string UserName { get; set; }
-        [Required]
-        [StringLength(30, MinimumLength = 4)]
+        // [Required]
+       //  [StringLength(30, MinimumLength = 4)]
         public string Password { get; set; }
-        [DataType(DataType.Date)]
+       // [DataType(DataType.Date)]
         public DateTime? CreatedDate { get; set; }
     }
 }
